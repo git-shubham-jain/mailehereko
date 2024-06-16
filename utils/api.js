@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_KEY = process.env.NEXT_PUBLIC_OMDB_API_KEY;
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const API_KEY = 'c052b918';
+const BASE_URL = 'http://www.omdbapi.com/';
 
 export const fetchMovies = async (searchTerm, type) => {
   const response = await axios.get(`${BASE_URL}`, {
@@ -11,7 +11,6 @@ export const fetchMovies = async (searchTerm, type) => {
       type,
     },
   });
-  console.log(response.data.Search,'data')
   return response.data.Search;
 };
 

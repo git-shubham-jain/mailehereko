@@ -20,8 +20,6 @@ const Movies = () => {
     }
   }, [movieid]);
 
-  console.log(movie, "check mov");
-
   if (!movie) return <div>Loading...</div>;
 
   return (
