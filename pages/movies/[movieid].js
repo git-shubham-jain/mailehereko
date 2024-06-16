@@ -25,23 +25,7 @@ const Movies = () => {
   if (!movie) return <div>Loading...</div>;
 
   return (
-    <div className="bg-gradient-to-r from-[#152643] to-[#14231a] text-white min-h-screen">
-      <header className="flex justify-between items-center p-4">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
-        </div>
-        <nav className="space-x-4">
-          <a href="#" className="hover:underline">
-            Movies
-          </a>
-          <a href="#" className="hover:underline">
-            TV Shows
-          </a>
-          <a href="#" className="hover:underline">
-            Suggest me →
-          </a>
-        </nav>
-      </header>
+    <div className="text-white min-h-screen">
       <main className="p-4">
         <div className="relative">
           <img

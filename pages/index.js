@@ -47,24 +47,7 @@ const Home = ({ initialData }) => {
   const debouncedHandleInputChange = useCallback(debounce(handleInputChange, 500), []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#152643] to-[#14231a] text-white">
-      <header className="flex justify-between items-center p-6">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
-        </div>
-        <nav className="space-x-6">
-          <a href="#" className="hover:text-zinc-400">
-            Movies
-          </a>
-          <a href="#" className="hover:text-zinc-400">
-            TV Shows
-          </a>
-          <a href="#" className="hover:text-zinc-400">
-            Suggest me →
-          </a>
-        </nav>
-      </header>
-
+    <div className="min-h-screen text-white">
       <main className="p-6">
         <section className="mb-8 max-w-[36%]">
           <h1 className="text-5xl font-bold mb-2">MaileHereko</h1>
