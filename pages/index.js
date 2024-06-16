@@ -115,7 +115,7 @@ export const getServerSideProps = async () => {
 
     return { props: { initialData: moviesWithRatings } };
   } catch (error) {
-\    return { props: { initialData: [] } };
+    return { props: { initialData: [] } };
   }
 };
 
